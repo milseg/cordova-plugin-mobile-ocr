@@ -104,7 +104,7 @@ public class Textocr extends CordovaPlugin {
                             catch (Exception e)
                             {
                                 e.printStackTrace();
-                                callbackContext.error("Exception");
+                                callbackContext.error("Exception"+Log.getStackTraceString(e));
                                 PluginResult r = new PluginResult(PluginResult.Status.ERROR);
                                 callbackContext.sendPluginResult(r);
                             }
